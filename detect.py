@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import cv2
 from picamera2 import Picamera2
 
@@ -5,7 +6,7 @@ from ultralytics import YOLO
 
 # Initialize the Picamera2
 picam2 = Picamera2()
-picam2.preview_configuration.main.size = (1280, 720)
+picam2.preview_configuration.main.size = (640, 480)
 picam2.preview_configuration.main.format = "RGB888"
 picam2.preview_configuration.align()
 picam2.configure("preview")
